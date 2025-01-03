@@ -9,12 +9,12 @@ const Hero = () => {
       <div className="hero-content-container">
         <div className="max-md:order-2 flex flex-col gap-5 z-40">
         <div className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-5">
-            <h1 className="leading-tight animate-fade-in-up">
+            <h2 className="leading-tight animate-fade-in-up">
               Hi, I'm <span className="text-dark-red">Rajeshkumar</span>
-            </h1>
-            <h2 className="text-gray-800 mt-2 animate-fade-in-up animation-delay-200">
-              <span className="text-shadow-md">Developer</span> From Vellore
             </h2>
+            <h3 className="text-gray-800 mt-2 animate-fade-in-up animation-delay-200">
+              <span className="text-shadow-md">Developer</span>
+            </h3>
             <p className="mt-5 text-lg md:text-xl text-gray-600 animate-fade-in-up animation-delay-400">
               Full Stack Developer. Coffee-fueled coder. Pizza-powered problem solver. Embracing new tech with a smile.
             </p>

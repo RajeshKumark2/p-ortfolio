@@ -17,13 +17,13 @@ const TopMenu = () => {
   const downloadCV = () => {
     setLoading(true);
 
-    fetch('/assets/Ganesh_JDF.pdf') // Replace 'ganesh.pdf' with the actual filename
+    fetch('/assets/Rajesh.pdf') // Replace 'ganesh.pdf' with the actual filename
       .then(response => response.blob())
       .then(blob => {
         const url = window.URL.createObjectURL(new Blob([blob]));
         const link = document.createElement('a');
         link.href = url;
-        link.setAttribute('download', 'Ganesh_JDF.pdf'); // Change the downloaded file name if needed
+        link.setAttribute('download', 'Rajesh.pdf'); // Change the downloaded file name if needed
         document.body.appendChild(link);
         link.click();
         link.parentNode.removeChild(link);

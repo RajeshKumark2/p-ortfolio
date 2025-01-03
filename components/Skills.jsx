@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Skills = () => {
   return (
-    <>
+    <div>
       <section className="w-full h-fit px-[40px] py-10 max-xs:px-[20px] relative bg-white" id="skills">
       <div className="max-w-[1250px] mx-auto">
         <div className="inline-block">
@@ -23,13 +23,14 @@ const Skills = () => {
 
               { src: "/assets/python.png", alt: "Python", label: "Python" },
               { src: "/assets/dj4.png", alt: "Django", label: "Django" },
+              { src: "/assets/flask.png", alt: "Flask", label: "Flask" },
               { src: "/assets/html.png", alt: "HTML", label: "HTML" },
               { src: "/assets/css1.png", alt: "CSS", label: "CSS" },
               { src: "/assets/js1.png", alt: "JavaScript", label: "JavaScript" },
-              { src: "/assets/Bootstrap.png", alt: "JavaScript", label: "Bootstrap" },
+              { src: "/assets/Bootstrap.png", alt: "Bootstrap", label: "Bootstrap" },
               { src: "/assets/git-13.png", alt: "Git", label: "Git" },
             
-              { src: "/assets/GitHub.png", alt: "JavaScript", label: "GitHub" },
+              { src: "/assets/GitHub.png", alt: "GitHub", label: "GitHub" },
               { src: "/assets/sql.png", alt: "MySQL", label: "MySQL" },
               // { src: "/assets/spring3.png", alt: "Spring", label: "Spring" },
               { src: "/assets/react.png", alt: "React.js", label: "React.js" },
@@ -47,9 +48,7 @@ const Skills = () => {
           </div>
         </div>
       </section>
-
-      
-    </>
+    </div>
   );
 };
 

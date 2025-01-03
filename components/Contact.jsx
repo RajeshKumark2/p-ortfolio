@@ -1,6 +1,6 @@
 "use client";
 
-import { AiFillTwitterSquare, AiFillLinkedin, AiFillInstagram, AiFillGithub } from "react-icons/ai";
+import { AiOutlineWhatsApp, AiFillLinkedin, AiFillInstagram, AiFillGithub } from "react-icons/ai";
 import { FaDev } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
@@ -51,45 +51,37 @@ const Contact = () => {
                 <h5 className="text-dark-blue">Socials</h5>
                 <div className="flex gap-5">
                   <a
-                    href="https://github.com/"
+                    href="https://github.com/RajeshKumark2"
                     className="text-3xl text-dark-blue hover:text-dark-red transition-all duration-300 transform hover:scale-110"
                     aria-label="GitHub"
                   >
                     <AiFillGithub />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/in/rajeshkumar1907?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                     className="text-3xl text-dark-blue hover:text-dark-red transition-all duration-300 transform hover:scale-110"
                     aria-label="LinkedIn"
                   >
                     <AiFillLinkedin />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.instagram.com/rajesh.19021/?hl=en"
                     className="text-3xl text-dark-blue hover:text-dark-red transition-all duration-300 transform hover:scale-110"
                     aria-label="Instagram"
                   >
                     <AiFillInstagram />
                   </a>
                   <a
-                    href="#"
-                    className="text-3xl text-dark-blue hover:text-dark-red transition-all duration-300 transform hover:scale-110"
-                    aria-label="Twitter"
+                    href="https://wa.me/+91 8248190818" // Replace "yourphonenumber" with your actual WhatsApp number in international format (e.g., 919876543210 for India)
+                    className="text-3xl text-dark-blue hover:text-dark-green transition-all duration-300 transform hover:scale-110"
+                    aria-label="WhatsApp"
                   >
-                    <AiFillTwitterSquare />
-                  </a>
-                  <a
-                    href="#"
-                    className="text-3xl text-dark-blue hover:text-dark-red transition-all duration-300 transform hover:scale-110"
-                    aria-label="Dev"
-                  >
-                    <FaDev />
+                    <AiOutlineWhatsApp />
                   </a>
                 </div>
               </div>
             </div>
           </div>
-
           {/* Contact Form Section */}
           <div>
             <form onSubmit={sendEmail} ref={form} className="w-full">
