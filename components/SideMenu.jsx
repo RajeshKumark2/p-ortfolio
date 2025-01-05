@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { AiOutlineWhatsApp, AiFillLinkedin, AiFillGithub, AiFillInstagram, } from "react-icons/ai";
 import { FaDev } from "react-icons/fa";
 import { useMenuStore } from "@/store/useMenuStore";
 import { sidebarMenuLinks } from "@/constants";
@@ -115,25 +115,33 @@ const SideMenu = () => {
         <div className="mt-auto text-center">
           <div className="flex justify-center gap-4 mb-4 mt-5">
             <a
-              href="/"
-              target="_blank"
-              className="text-3xl text-dark-blue hover:text-dark-red transition-all duration-300 transform hover:scale-110"
-            >
-              <AiFillLinkedin size={24} />
-            </a>
-            <a
-              href="https://github.com/Ganesh-kumar-cmd"
+              href="https://github.com/RajeshKumark2"
               target="_blank"
               className="text-3xl text-dark-blue hover:text-dark-red transition-all duration-300 transform hover:scale-110"
             >
               <AiFillGithub size={24} />
             </a>
             <a
-              href="/"
+              href="https://www.linkedin.com/in/rajeshkumar1907?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               target="_blank"
               className="text-3xl text-dark-blue hover:text-dark-red transition-all duration-300 transform hover:scale-110"
             >
-              <FaDev size={24} />
+              <AiFillLinkedin size={24} />
+            </a>
+            
+            <a
+              href="https://www.instagram.com/rajesh.19021/?hl=en"
+              className="text-3xl text-dark-blue hover:text-dark-red transition-all duration-300 transform hover:scale-110"
+              aria-label="Instagram"
+            >
+              <AiFillInstagram />
+            </a>
+            <a
+              href="https://wa.me/+91 8248190818" // Replace "yourphonenumber" with your actual WhatsApp number in international format (e.g., 919876543210 for India)
+              className="text-3xl text-dark-blue hover:text-dark-green transition-all duration-300 transform hover:scale-110"
+              aria-label="WhatsApp"
+            >
+              <AiOutlineWhatsApp />
             </a>
           </div>
           <p className={`text-sm ${isScrolled ? 'text-gray-900' : 'text-gray-600'}`}>

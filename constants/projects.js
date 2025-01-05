@@ -75,7 +75,7 @@ export const projects = [
     youtubeUrl: "",
     projectUrl: "https://darling-pasca-affc8c.netlify.app/",
     category: ["react"],
-    deployed: true,
+    deployed: trueś,
   },
   {
     name: "College-Management-System",

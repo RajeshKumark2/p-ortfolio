@@ -9,14 +9,14 @@ const Hero = () => {
       <div className="hero-content-container">
         <div className="max-md:order-2 flex flex-col gap-5 z-40">
         <div className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-5">
-            <h2 className="leading-tight animate-fade-in-up">
+            <h4 className="leading-tight animate-fade-in-up">
               Hi, I'm <span className="text-dark-red">Rajeshkumar</span>
-            </h2>
-            <h3 className="text-gray-800 mt-2 animate-fade-in-up animation-delay-200">
-              <span className="text-shadow-md">Developer</span>
-            </h3>
+            </h4>
+            <h5 className="text-gray-800 mt-2 animate-fade-in-up animation-delay-200">
+              <span className="text-shadow-md">Full-Stack Developer.</span>
+            </h5>
             <p className="mt-5 text-lg md:text-xl text-gray-600 animate-fade-in-up animation-delay-400">
-              Full Stack Developer. Coffee-fueled coder. Pizza-powered problem solver. Embracing new tech with a smile.
+              Junior Full Stack Developer. Coffee-fueled coder. Pizza-powered problem solver. Embracing new tech with a smile.
             </p>
           </div>
 
