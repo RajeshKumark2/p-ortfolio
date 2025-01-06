@@ -54,7 +54,8 @@ const TopMenu = () => {
           <div className="flex md:gap-10 flex-col md:flex-row">
             <div className="flex gap-1 items-center text-sm font-bold">
               <MdEmail />
-              <span className="text-dark-blue">rajeshraj8558@gmail.com</span>
+              <a href='mailto:rajeshraj8558@gmail.com' className="text-dark-blue" style={{textDecoration: "none"}}  >
+              <span >rajeshraj8558@gmail.com</span></a>
             </div>
           </div>
 

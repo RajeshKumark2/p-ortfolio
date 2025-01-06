@@ -28,9 +28,9 @@ const Skills = () => {
               { src: "/assets/css1.png", alt: "CSS", label: "CSS" },
               { src: "/assets/js1.png", alt: "JavaScript", label: "JavaScript" },
               { src: "/assets/Bootstrap.png", alt: "Bootstrap", label: "Bootstrap" },
-              { src: "/assets/git-13.png", alt: "Git", label: "Git" },
+              // { src: "/assets/git-13.png", alt: "Git", label: "Git" },
             
-              { src: "/assets/GitHub.png", alt: "GitHub", label: "GitHub" },
+              { src: "/assets/Gite.png", alt: "GitHub", label: "GitHub" },
               { src: "/assets/sql.png", alt: "MySQL", label: "MySQL" },
               // { src: "/assets/spring3.png", alt: "Spring", label: "Spring" },
               { src: "/assets/react.png", alt: "React.js", label: "React.js" },

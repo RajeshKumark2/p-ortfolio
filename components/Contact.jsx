@@ -36,7 +36,7 @@ const Contact = () => {
                 </span>
                 Contact Me!
               </p>
-            </div>
+              </div>
             <p className="text-dark-blue">
               Feel free to reach out. I'm always open to new opportunities and projects.
             </p>

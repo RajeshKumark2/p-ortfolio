@@ -88,7 +88,7 @@ const SideMenu = () => {
             alt="antonio"
             className="rounded-full shadow-md"
           />
-          <p className={`font-bold text-xl ${isScrolled ? 'text-gray-900' : 'text-gray-900'}`}>Rajeshkumar</p>
+          <p className={`font-bold text-xl ${isScrolled ? 'text-gray-900' : 'text-gray-900'}`}><i>Rajeshkumar</i>.k</p>
         </div>
 
         <nav className="flex flex-col gap-3 mt-10">
@@ -137,7 +137,7 @@ const SideMenu = () => {
               <AiFillInstagram />
             </a>
             <a
-              href="https://wa.me/+91 8248190818" // Replace "yourphonenumber" with your actual WhatsApp number in international format (e.g., 919876543210 for India)
+              href="https://wa.me/918248190818" // Replace "yourphonenumber" with your actual WhatsApp number in international format (e.g., 919876543210 for India)
               className="text-3xl text-dark-blue hover:text-dark-green transition-all duration-300 transform hover:scale-110"
               aria-label="WhatsApp"
             >
