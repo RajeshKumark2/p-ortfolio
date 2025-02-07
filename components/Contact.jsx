@@ -1,5 +1,4 @@
 "use client";
-
 import { AiOutlineWhatsApp, AiFillLinkedin, AiFillInstagram, AiFillGithub } from "react-icons/ai";
 import { FaDev } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
@@ -137,5 +136,4 @@ const Contact = () => {
     </div>
   );
 };
-
 export default Contact;
