@@ -13,7 +13,7 @@ const Hero = () => {
               Hi, I'm <span className="text-dark-red">Rajeshkumar.k</span>
             </h4>
             <h5 className="text-gray-800 mt-2 animate-fade-in-up animation-delay-200">
-              <span className="text-shadow-md">Full-Stack Developer.</span>
+              <span className="text-shadow-md">Python Developer.</span>
             </h5>
             <p className="mt-5 text-lg md:text-xl text-gray-600 animate-fade-in-up animation-delay-400">
               Junior Python Full Stack Developer. Coffee-fueled coder. Pizza-powered problem solver. Embracing new tech with a smile.
@@ -36,7 +36,6 @@ const Hero = () => {
         <Image src="/assets/Hero.png" width={500} height={500} alt="Rajesh" 
         className="z-10 rounded-full shadow-lg " />
       </div>
-
       <ul className="bg-squares">
         <li></li>
         <li></li>

@@ -17,9 +17,9 @@ const About = () => {
           Hi, I'm Rajeshkumar K, a dedicated Junior Python Full Stack Developer with a strong passion 
           for creating modern and scalable web applications. I have expertise in both front-end and back-end 
           development, allowing me to design and build dynamic, user-friendly websites that adhere to industry standards. 
-          With a solid foundation in front-end technologies like HTML, CSS, JavaScript, React.js, and Bootstrap, 
+          With a solid foundation in front-end technologies like HTML, CSS, JavaScript and Bootstrap, 
           I focus on crafting responsive and intuitive designs to ensure a seamless user experience. On the back-end, 
-          my proficiency in Python, along with frameworks like Django and Flask, enables me to develop robust and efficient 
+          my proficiency in Python, along with frameworks like Django, enables me to develop robust and efficient 
           systems that are both secure and scalable. I am driven by a commitment to innovation and problem-solving, 
           eager to collaborate with dynamic teams, and ready to contribute my skills to projects that drive 
           organizational success and growth.

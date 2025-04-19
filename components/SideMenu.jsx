@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { AiOutlineWhatsApp, AiFillLinkedin, AiFillGithub, AiFillInstagram, } from "react-icons/ai";
-import { FaDev } from "react-icons/fa";
+// import { FaDev } from "react-icons/fa";
 import { useMenuStore } from "@/store/useMenuStore";
 import { sidebarMenuLinks } from "@/constants";
 
@@ -88,7 +88,7 @@ const SideMenu = () => {
             alt="antonio"
             className="rounded-full shadow-md"
           />
-          <p className={`font-bold text-xl ${isScrolled ? 'text-gray-900' : 'text-gray-900'}`}><i>Rajeshkumar</i>.k</p>
+          <p className={`font-bold text-xl ${isScrolled ? 'text-gray-900' : 'text-gray-900'}`}>Rajeshkumar.k</p>
         </div>
 
         <nav className="flex flex-col gap-3 mt-10">
@@ -145,7 +145,11 @@ const SideMenu = () => {
             </a>
           </div>
           <p className={`text-sm ${isScrolled ? 'text-gray-900' : 'text-gray-600'}`}>
+<<<<<<< HEAD
             © 2025 Rajeshkumar. All rights reserved.
+=======
+            ©2024 Rajeshkumar. All rights reserved.
+>>>>>>> 700dacf56417ce60eb1d61e80177f7004b21ce71
           </p>
         </div>
       </div>

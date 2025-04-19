@@ -23,8 +23,12 @@ const Skills = () => {
 
               { src: "/assets/python.png", alt: "Python", label: "Python" },
               { src: "/assets/dj4.png", alt: "Django", label: "Django" },
+<<<<<<< HEAD
               { src: "/assets/java1.png", alt: "Java", label: "Java" },
               { src: "/assets/flask.png", alt: "Flask", label: "Flask" },
+=======
+              // { src: "/assets/flask.png", alt: "Flask", label: "Flask" },
+>>>>>>> 700dacf56417ce60eb1d61e80177f7004b21ce71
               { src: "/assets/html.png", alt: "HTML", label: "HTML" },
               { src: "/assets/css1.png", alt: "CSS", label: "CSS" },
               { src: "/assets/js1.png", alt: "JavaScript", label: "JavaScript" },
@@ -34,7 +38,7 @@ const Skills = () => {
               { src: "/assets/Hi.png", alt: "GitHub", label: "GitHub" },
               { src: "/assets/sql.png", alt: "MySQL", label: "MySQL" },
               // { src: "/assets/spring3.png", alt: "Spring", label: "Spring" },
-              { src: "/assets/react.png", alt: "React.js", label: "React.js" },
+              // { src: "/assets/react.png", alt: "React.js", label: "React.js" },
               // { src: "/assets/re.png", alt: "Redux", label: "Redux" },
               // { src: "/assets/R.png", alt: "MongoDB", label: "MongoDB" },
               // // { src: "/assets/ex.png", alt: "Express.js", label: "Express.js" },
