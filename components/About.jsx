@@ -44,7 +44,7 @@ const About = () => {
       <div className="relative w-full text-center py-8 md:py-14 rounded-md bg-gray-100 shadow-lg hover:shadow-2xl transition-all duration-500 ease-in-out transform hover:-translate-y-3 hover:bg-gray-100">
         <div className="absolute inset-0 -z-10 bg-gradient-to-r from-gray-100 to-gray-200 opacity-20 rounded-md"></div>
         <h3 className="text-4xl md:text-5xl mb-3 font-extrabold text-dark-red transition-colors duration-500">
-          Fresher
+          One
         </h3>
         <span className="uppercase text-gray-700 font-semibold transition-colors duration-500">
           Years of Experience

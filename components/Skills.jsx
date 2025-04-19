@@ -18,17 +18,18 @@ const Skills = () => {
 
           <div className="grid md:grid-cols-5 sm:grid-cols-3 gap-8 grid-cols-2 mt-8">
             {[
-              // { src: "/assets/java1.png", alt: "Java", label: "Java" },
+            
               // //{ src: "/assets/mern1.png", alt: "Java", label: "" },
 
               { src: "/assets/python.png", alt: "Python", label: "Python" },
               { src: "/assets/dj4.png", alt: "Django", label: "Django" },
+              { src: "/assets/java1.png", alt: "Java", label: "Java" },
               { src: "/assets/flask.png", alt: "Flask", label: "Flask" },
               { src: "/assets/html.png", alt: "HTML", label: "HTML" },
               { src: "/assets/css1.png", alt: "CSS", label: "CSS" },
               { src: "/assets/js1.png", alt: "JavaScript", label: "JavaScript" },
               { src: "/assets/Bootstrap.png", alt: "Bootstrap", label: "Bootstrap" },
-              // { src: "/assets/git-13.png", alt: "Git", label: "Git" },
+              { src: "/assets/git-13.png", alt: "Git", label: "Git" },
             
               { src: "/assets/Hi.png", alt: "GitHub", label: "GitHub" },
               { src: "/assets/sql.png", alt: "MySQL", label: "MySQL" },
@@ -37,7 +38,7 @@ const Skills = () => {
               // { src: "/assets/re.png", alt: "Redux", label: "Redux" },
               // { src: "/assets/R.png", alt: "MongoDB", label: "MongoDB" },
               // // { src: "/assets/ex.png", alt: "Express.js", label: "Express.js" },
-              // { src: "/assets/node3.png", alt: "Node.js", label: "Node.js" },
+              { src: "/assets/node3.png", alt: "Node.js", label: "Node.js" },
               { src: "/assets/doc.png", alt: "Docker", label: "Docker" },
             ].map((skill, index) => (
               <div key={index} className="bg-light-bg p-6 rounded-lg text-center shadow-lg transform hover:scale-105 transition-transform duration-300">

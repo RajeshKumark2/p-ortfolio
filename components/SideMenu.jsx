@@ -145,7 +145,7 @@ const SideMenu = () => {
             </a>
           </div>
           <p className={`text-sm ${isScrolled ? 'text-gray-900' : 'text-gray-600'}`}>
-            © 2024 Rajeshkumar. All rights reserved.
+            © 2025 Rajeshkumar. All rights reserved.
           </p>
         </div>
       </div>
