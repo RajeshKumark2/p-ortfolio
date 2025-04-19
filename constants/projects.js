@@ -43,7 +43,6 @@ export const projects = [
     image: "../../assets/app.png",
     youtube: true,
     youtubeUrl: "",
-    category: ["python"],
   },
   {
     name: "A CRUD-based management system to handle employee records. Allows users to add, edit, delete, and view employee data efficiently.",
