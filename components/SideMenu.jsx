@@ -75,9 +75,9 @@ const SideMenu = () => {
 
   return (
     <aside
-      className={`side-menu bg-white border-r border-gray-300 ${
-        isOpen ? "max-lg:block" : "max-md:hidden"
-      }`}
+    className={`side-menu bg-white border-r border-gray-300 ${
+      isOpen ? "block" : "hidden"
+    } lg:block`}
     >
       <div className="flex flex-col items-center justify-between h-full p-6">
         <div className="flex flex-col items-center gap-4">
@@ -145,11 +145,7 @@ const SideMenu = () => {
             </a>
           </div>
           <p className={`text-sm ${isScrolled ? 'text-gray-900' : 'text-gray-600'}`}>
-<<<<<<< HEAD
             © 2025 Rajeshkumar. All rights reserved.
-=======
-            ©2024 Rajeshkumar. All rights reserved.
->>>>>>> 700dacf56417ce60eb1d61e80177f7004b21ce71
           </p>
         </div>
       </div>

@@ -130,9 +130,24 @@ const Contact = () => {
                 </button>
               </div>
             </form>
+            
           </div>
+          
         </div>
+        
       </div>
+      <br />
+      <div>
+             <h6><p style={{
+              bottom:'20px',
+              left:'50px',
+              right:'50px',
+              transform:'translateX(-50)',
+              textAlign: 'center',
+              width:'100%',
+              color:'#666'
+             }}>@ Copyright! <br />@2025 RajeshKumar. All rights reserved</p></h6> 
+            </div>
     </div>
   );
 };
