@@ -1,14 +1,19 @@
 "use client";
 import { AiOutlineWhatsApp, AiFillLinkedin, AiFillInstagram, AiFillGithub } from "react-icons/ai";
-import { FaDev } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
-import { useRef } from "react";
+import { useRef, useState} from "react";
 
 const Contact = () => {
   const form = useRef();
+  const [loading, setLoading] = useState(false);
+  const [sent, setSent] = useState(false);
+  const [error, setError] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setLoading(true);
+    setSent(false);
+    setError(false);
 
     emailjs
       .sendForm(
@@ -20,15 +25,16 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          alert("Message sent successfully!");
+          setLoading(false);
+          setSent(true);
+          form.current.reset(); // Clear form
         },
         (error) => {
           console.log(error.text);
-          alert("Failed to send message. Try again!");
+          setLoading(false);
+          setError(true);
         }
       );
-
-    e.target.reset(); // Optional: clear form
   };
 
   return (
@@ -135,21 +141,20 @@ const Contact = () => {
               </div>
               <div className="flex justify-end">
                 {/* Submit Button */}
-                <button
-                  type="submit"
+               
+               
+                <button type="submit" disabled={loading}
                   className="py-3 px-8 font-semibold text-white bg-gradient-to-r from-dark-red to-red-600 hover:from-red-600 hover:to-dark-red rounded-full shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-500"
                 >
-                  Submit
-                </button>
+                {loading ? "Sending..." : "Submit"}
+                  </button>
               </div>
             </form>
-            
+            {sent && <p style={{ color: "green" }}>Message sent successfully!</p>}
+            {error && <p style={{ color: "red" }}>Failed to send message. Try again.</p>} 
           </div>
-          
         </div>
-        
       </div>
-      <br />
       <div>
              <h6><p style={{
               bottom:'20px',
