@@ -11,13 +11,24 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_b6cw4ab", "template_rp3kqnq", form.current, "Nbq_YZcBmI7h4PZRE")
-      .then((result) => {
-        form.current.reset();
-      })
-      .catch((error) => {
-        console.log(error.text);
-      });
+      .sendForm(
+        'service_k12zy0q', // Replace with your EmailJS service ID
+        'template_4kns5p6', // Replace with your EmailJS template ID
+        form.current,
+        'fcH9gi0X8f5kDF8h7' // Replace with your EmailJS public key
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Message sent successfully!");
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Failed to send message. Try again!");
+        }
+      );
+
+    e.target.reset(); // Optional: clear form
   };
 
   return (
@@ -81,6 +92,8 @@ const Contact = () => {
               </div>
             </div>
           </div>
+
+
           {/* Contact Form Section */}
           <div>
             <form onSubmit={sendEmail} ref={form} className="w-full">
