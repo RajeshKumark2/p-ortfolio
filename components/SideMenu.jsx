@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { AiOutlineWhatsApp, AiFillLinkedin, AiFillGithub, AiFillInstagram, } from "react-icons/ai";
-// import { FaDev } from "react-icons/fa";
+import { FaDev } from "react-icons/fa";
 import { useMenuStore } from "@/store/useMenuStore";
 import { sidebarMenuLinks } from "@/constants";
 
@@ -75,9 +75,9 @@ const SideMenu = () => {
 
   return (
     <aside
-    className={`side-menu bg-white border-r border-gray-300 ${
-      isOpen ? "block" : "hidden"
-    } lg:block`}
+      className={`side-menu bg-white border-r border-gray-300 ${
+        isOpen ? "max-lg:block" : "max-md:hidden"
+      }`}
     >
       <div className="flex flex-col items-center justify-between h-full p-6">
         <div className="flex flex-col items-center gap-4">
@@ -145,7 +145,7 @@ const SideMenu = () => {
             </a>
           </div>
           <p className={`text-sm ${isScrolled ? 'text-gray-900' : 'text-gray-600'}`}>
-            © 2025 Rajeshkumar. All rights reserved.
+            © 2024 Rajeshkumar. All rights reserved.
           </p>
         </div>
       </div>
