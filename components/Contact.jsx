@@ -1,40 +1,23 @@
 "use client";
 import { AiOutlineWhatsApp, AiFillLinkedin, AiFillInstagram, AiFillGithub } from "react-icons/ai";
+import { FaDev } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
-import { useRef, useState} from "react";
+import { useRef } from "react";
 
 const Contact = () => {
   const form = useRef();
-  const [loading, setLoading] = useState(false);
-  const [sent, setSent] = useState(false);
-  const [error, setError] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
-    setLoading(true);
-    setSent(false);
-    setError(false);
 
     emailjs
-      .sendForm(
-        'service_k12zy0q', // Replace with your EmailJS service ID
-        'template_4kns5p6', // Replace with your EmailJS template ID
-        form.current,
-        'fcH9gi0X8f5kDF8h7' // Replace with your EmailJS public key
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setLoading(false);
-          setSent(true);
-          form.current.reset(); // Clear form
-        },
-        (error) => {
-          console.log(error.text);
-          setLoading(false);
-          setError(true);
-        }
-      );
+      .sendForm("service_b6cw4ab", "template_rp3kqnq", form.current, "Nbq_YZcBmI7h4PZRE")
+      .then((result) => {
+        form.current.reset();
+      })
+      .catch((error) => {
+        console.log(error.text);
+      });
   };
 
   return (
@@ -98,8 +81,6 @@ const Contact = () => {
               </div>
             </div>
           </div>
-
-
           {/* Contact Form Section */}
           <div>
             <form onSubmit={sendEmail} ref={form} className="w-full">
@@ -141,31 +122,24 @@ const Contact = () => {
               </div>
               <div className="flex justify-end">
                 {/* Submit Button */}
-               
-               
-                <button type="submit" disabled={loading}
+                <button
+                  type="submit"
                   className="py-3 px-8 font-semibold text-white bg-gradient-to-r from-dark-red to-red-600 hover:from-red-600 hover:to-dark-red rounded-full shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-500"
                 >
-                {loading ? "Sending..." : "Submit"}
-                  </button>
+                  Send Message
+                </button>
               </div>
             </form>
-            {sent && <p style={{ color: "green" }}>Message sent successfully!</p>}
-            {error && <p style={{ color: "red" }}>Failed to send message. Try again.</p>} 
+            
           </div>
+          
         </div>
+        
       </div>
-      <div>
-             <h6><p style={{
-              bottom:'20px',
-              left:'50px',
-              right:'50px',
-              transform:'translateX(-50)',
-              textAlign: 'center',
-              width:'100%',
-              color:'#666'
-             }}>@ Copyright! <br />@2025 RajeshKumar. All rights reserved</p></h6> 
-            </div>
+      <br />
+      <div className="text-center mt-10 text-sm text-gray-500">
+        <p>© 2025 Rajesh Kumar. All rights reserved.</p>
+      </div>
     </div>
   );
 };
