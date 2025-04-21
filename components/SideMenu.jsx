@@ -80,7 +80,7 @@ const SideMenu = () => {
       }`}
     >
       <div className="flex flex-col items-center justify-between h-full p-6">
-        <div className="flex flex-col items-center gap-4">
+        <div className="flex flex-col items-center gap-3">
           <Image
             src="/assets/Rajesh.jpg"
             width={100}
@@ -91,7 +91,7 @@ const SideMenu = () => {
           <p className={`font-bold text-xl ${isScrolled ? 'text-gray-900' : 'text-gray-900'}`}>Rajeshkumar.k</p>
         </div>
 
-        <nav className="flex flex-col gap-3 mt-10">
+        <nav className="flex flex-col gap-1 mt-5">
           {sidebarMenuLinks.map((link) => {
             const isActive = activeLink === link;
 
@@ -131,6 +131,7 @@ const SideMenu = () => {
             
             <a
               href="https://www.instagram.com/rajesh.19021/?hl=en"
+              target="_blank"
               className="text-3xl text-dark-blue hover:text-dark-red transition-all duration-300 transform hover:scale-110"
               aria-label="Instagram"
             >
@@ -138,15 +139,16 @@ const SideMenu = () => {
             </a>
             <a
               href="https://wa.me/918248190818" // Replace "yourphonenumber" with your actual WhatsApp number in international format (e.g., 919876543210 for India)
+              target="_blank"
               className="text-3xl text-dark-blue hover:text-dark-green transition-all duration-300 transform hover:scale-110"
               aria-label="WhatsApp"
             >
               <AiOutlineWhatsApp />
             </a>
           </div>
-          <p className={`text-sm ${isScrolled ? 'text-gray-900' : 'text-gray-600'}`}>
-            © 2024 Rajeshkumar. All rights reserved.
-          </p>
+          <div className="text-center mt-5 text-sm text-gray-500">
+          <p>© 2025 Rajesh Kumar. All rights reserved.</p>
+          </div>
         </div>
       </div>
     </aside>

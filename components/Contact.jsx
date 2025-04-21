@@ -13,6 +13,7 @@ const Contact = () => {
     emailjs
       .sendForm("service_b6cw4ab", "template_rp3kqnq", form.current, "Nbq_YZcBmI7h4PZRE")
       .then((result) => {
+        alert("Email Send Successfully!")
         form.current.reset();
       })
       .catch((error) => {
@@ -51,6 +52,7 @@ const Contact = () => {
                 <div className="flex gap-5">
                   <a
                     href="https://github.com/RajeshKumark2"
+                    target="_blank"
                     className="text-3xl text-dark-blue hover:text-dark-red transition-all duration-300 transform hover:scale-110"
                     aria-label="GitHub"
                   >
@@ -58,6 +60,7 @@ const Contact = () => {
                   </a>
                   <a
                     href="https://www.linkedin.com/in/rajeshkumar1907?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank"
                     className="text-3xl text-dark-blue hover:text-dark-red transition-all duration-300 transform hover:scale-110"
                     aria-label="LinkedIn"
                   >
@@ -65,13 +68,15 @@ const Contact = () => {
                   </a>
                   <a
                     href="https://www.instagram.com/rajesh.19021/?hl=en"
+                    target="_blank"
                     className="text-3xl text-dark-blue hover:text-dark-red transition-all duration-300 transform hover:scale-110"
                     aria-label="Instagram"
                   >
                     <AiFillInstagram />
                   </a>
                   <a
-                    href="https://wa.me/+91 8248190818" // Replace "yourphonenumber" with your actual WhatsApp number in international format (e.g., 919876543210 for India)
+                    href="https://wa.me/+918248190818" // Replace "yourphonenumber" with your actual WhatsApp number in international format (e.g., 919876543210 for India)
+                    target="_blank"
                     className="text-3xl text-dark-blue hover:text-dark-green transition-all duration-300 transform hover:scale-110"
                     aria-label="WhatsApp"
                   >

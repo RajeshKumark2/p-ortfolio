@@ -20,6 +20,11 @@ export const sidebarMenuLinks = [
       sectionId: "projects",
     },
     {
+      route: "#certificate",
+      label: "Certificates",
+      sectionId: "certificate",
+    },
+    {
       route: "#contact",
       label: "Contact",
       sectionId: "contact",

@@ -25,9 +25,6 @@ export const projects = [
     youtubeUrl: "",
     category: ["python"],
   },
-
-
-
   {
     name: "A fast and SEO-friendly developer portfolio built using Next.js. Includes sections for skills, resume, project highlights, and a contact form.",
     githubUrl: "https://github.com/RajeshKumark2/p-ortfolio",
