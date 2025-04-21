@@ -13,10 +13,10 @@ const Contact = () => {
     emailjs
       .sendForm("service_b6cw4ab", "template_rp3kqnq", form.current, "Nbq_YZcBmI7h4PZRE")
       .then((result) => {
-        alert("Email Send Successfully!")
         form.current.reset();
       })
       .catch((error) => {
+        alert("Email Send Successfully!")
         console.log(error.text);
       });
   };
