@@ -19,7 +19,7 @@ const Projects = () => {
       <div className="max-w-[1250px] m-auto">
         <div className="inline-block">
           <p className="section-title">
-            <span className="mb-1">
+            <span className="mb-1"> 
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8 0 L16 8 L8 16 L0 8 L8 0Z" fill="currentColor"></path>
               </svg>
@@ -38,7 +38,7 @@ const Projects = () => {
               <ProjectCard
                 key={index}
                 name={project.name}
-                githubUrl={project.githubUrl}
+                // githubUrl={project.githubUrl}
                 image={project.image}
                 youtube={project.youtube}
                 deployed={project.deployed}

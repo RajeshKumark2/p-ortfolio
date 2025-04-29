@@ -6,7 +6,7 @@ import Head from "next/head";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["100", "400", "700", "800"] });
 export const metadata = {
-  title: "Rajesh",
+  title: "Rajeshkumar.k",
   description: "Python Full Stack Developer",
 };
 export default function RootLayout({ children }) {

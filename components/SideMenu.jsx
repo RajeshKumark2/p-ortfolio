@@ -147,7 +147,7 @@ const SideMenu = () => {
             </a>
           </div>
           <div className="text-center mt-5 text-sm text-gray-500">
-          <p>© 2025 Rajesh Kumar. All rights reserved.</p>
+          <p>© 2025 RajeshKumar. All rights reserved.</p>
           </div>
         </div>
       </div>

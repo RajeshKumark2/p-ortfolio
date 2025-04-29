@@ -16,9 +16,9 @@ const ProjectCard = ({ name, githubUrl, image, youtube, deployed, youtubeUrl, pr
       <img src={image} alt={`${name} Image`} className="w-full h-auto mb-2 rounded" />
       <h3>{name}</h3>
       <div className="flex gap-2 items-center w-full">
-        <a href={githubUrl} target="_blank" className="text-dark-blue p-1 rounded-full text-xl">
+        {/* <a href={githubUrl} target="_blank" className="text-dark-blue p-1 rounded-full text-xl">
           <Image src="/assets/git.svg.png" width={20} height={20} alt="github" />
-        </a>
+        </a> */}
         {deployed ? (
           <a href={projectUrl} target="_blank" className="text-dark-blue hover:underline text-2xl">
             <AiFillEye />
