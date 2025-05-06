@@ -52,6 +52,14 @@ export const projects = [
     category: ["python"],
   },
   {
+    name: "Doto is a full-stack Task Management web appliction build using React.js, Django and REST APIs.Designed to enhance productivity, this project is part of my skills.",
+    // githubUrl: "https://github.com/RajeshKumark2/management",
+    image: "../../React+Django.png",
+    youtube: true,
+    youtubeUrl: "",
+    category: ["python"],
+  },
+  {
     name: "A front-end clone of YouTube with a grid layout, video thumbnails, and embedded player. Designed to replicate the user experience of the actual platform.",
     githubUrl: "https://github.com/RajeshKumark2/youtube-clone",
     image: "../../assets/you.png",
